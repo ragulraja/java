@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class A-ZWordChange {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Enter the word");
+		String s = scan.nextLine();
+		char c = s.charAt(0);
+		String str="abcdefghijklmnopqrstuvwxyz";
+		String str1="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+		int alpa = (str.indexOf(s));
+		int beta = (str1.indexOf(s));
+		if(Character.isLowerCase(c)){
+		System.out.println(str.charAt(25-alpa));
+		}
+		else
+		System.out.println(str1.charAt(25-beta));
+
+	}
+
+}
